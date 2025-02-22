@@ -6,7 +6,7 @@ if(MSVC)
     set(CMAKE_DEBUG_POSTFIX "d")
 endif()
 
-add_library(tinyXML STATIC
+add_library(tinyXML
   tinyxml.h
   tinyxml.cpp
   tinyxmlerror.cpp
