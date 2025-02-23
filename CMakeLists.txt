@@ -38,24 +38,3 @@ install(FILES
   tinystr.h
   tinyxml.h
   DESTINATION include)
-
-install(EXPORT tinyxml
-  FILE
-    tinyxml.cmake
-  NAMESPACE
-    tinyxml::
-  DESTINATION
-    lib/cmake/tinyxml
-)
-install(
-  FILES
-    cmake/tinyxml-config.cmake
-    ${CMAKE_CURRENT_BINARY_DIR}/tinyxml-config-version.cmake
-  DESTINATION
-    lib/cmake/tinyxml
-)
-
-export(TARGETS tinyxml
-    FILE tinyxml-config.cmake
-    NAMESPACE tinyxml::
-)
