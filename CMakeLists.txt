@@ -6,6 +6,8 @@ if(MSVC)
     set(CMAKE_DEBUG_POSTFIX "d")
 endif()
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 add_library(tinyXML
   tinyxml.h
   tinyxml.cpp
